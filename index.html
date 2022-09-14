@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="notes-container">
+        <div class="notes-cards-header">
+            <div class="notes-card notes-card-name">Name</div>
+            <div class="notes-card notes-card-craeted">Craeted</div>
+            <div class="notes-card notes-card-category">Category</div>
+            <div class="notes-card notes-card-content">Content</div>
+            <div class="notes-card notes-card-dates">Dates</div>
+            <div class="notes-card notes-card-images">
+                <div class="notes-card-image"></div>
+                <div class="notes-card-image"><i class="bi bi-file-earmark-zip-fill"></i></div>
+                <div class="notes-card-image"><i class="bi bi-trash-fill"></i></div>
+            </div>
+        </div>
+
+        <div class="notes-container-body">
+            <div class="notes-list"></div>
+            <div class="create-note"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create
+                    Note</button></div>
+        </div>
+
+        <div class="notes-statistic">
+            <div class="notes-statistic-header">
+                <div class="notes-statistic-category">Note Category
+                </div>
+                <div class="notes-statistic-active">Active
+                </div>
+                <div class="archived">Archived
+                </div>
+            </div>
+            <div class="notes-statistic-cards">
+                <div class="notes-statistic-task">
+                    <div class="notes-statistic-task-icon"></div>
+                    <div class="notes-statistic-task-name"></div>
+                    <div class="notes-statistic-task-active"></div>
+                    <div class="notes-statistic-task-archived"></div>
+                </div>
+                <div class="notes-statistic-task">
+                    <div class="notes-statistic-task-icon"></div>
+                    <div class="notes-statistic-task-name"></div>
+                    <div class="notes-statistic-task-active"></div>
+                    <div class="notes-statistic-task-archived"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="create-new-note">
+                        <label for="new-note-type">Виберіть тип замітки</label>
+                        <input type="text" id="new-note-type">
+                        <label for="new-note-name">Вкажіть назву замітки</label>
+                        <input type="text" id="new-note-name">
+                        <label for="new-note-category">Виберіть категорію замітки</label>
+                        <input type="text" id="new-note-category">
+                        <label for="new-note-info">Впишіть информацію</label>
+                        <input type="text" id="new-note-info">
+                        <div>
+                            <input type="date" id="start" name="trip-start" value="2022-09-13" min="2022-09-13"
+                                max="2025-12-30">
+                        </div>
+                        <div>
+                            <input type="date" id="end" name="trip-start" value="2022-09-14" min="2022-09-13"
+                                max="2025-12-31">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script/app.js"></script>
+</body>
+
+</html>

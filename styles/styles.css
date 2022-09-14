@@ -1,0 +1,144 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif !important;
+}
+
+.notes-container {
+    margin: 30px;
+}
+
+.notes-cards-header {
+    display: flex;
+    background-color: #999999;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.notes-card {
+    display: flex;
+    font-size: 20px;
+}
+
+.notes-card-icon {
+    width: 60px;
+}
+
+.notes-card-name {
+    width: 275px;
+    margin-left: 50px;
+}
+
+.notes-card-craeted, .notes-card-category, .notes-card-content {
+    width: 200px;
+}
+
+.notes-card-dates {
+    width: 275px;
+}
+
+.notes-card-images {
+    width: 90px;
+    justify-content: space-between;
+}
+
+.notes-card-image {
+    width: 30px;
+}
+
+.notes-info-card {
+    background-color: #e8eaf5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 0px 20px;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 5px;
+
+}
+
+.notes-info-card div {
+    align-items: center;
+}
+
+.card-icon {
+    width: 50px;
+    color: white;
+    background: #616161;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.card-name {
+    display: flex;
+    width: 275px;
+    color: #888a8e;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 100%;
+}
+
+.card-craeted, .card-category, .card-content {
+    width: 200px;
+    color: #9899a0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-dates {
+    width: 275px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-notes-image {
+    width: 30px;
+    color: #7a7a7a;
+}
+
+.create-note {
+    display: flex;
+    justify-content: end;
+}
+
+.notes-statistic {
+    margin-top: 50px;
+}
+
+.notes-statistic-header {
+    display: flex;
+    background-color: #999999;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.notes-statistic-category {
+    margin-left: 50px;
+}
+
+.notes-statistic-header {
+    font-size: 20px;
+}
+
+.notes-statistic-category {
+    width: 50%;
+}
+
+.notes-statistic-active {
+    width: 25%;
+}
+
+.archived{
+    width: 35%;
+}

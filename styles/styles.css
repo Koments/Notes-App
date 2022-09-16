@@ -4,6 +4,10 @@ body {
     font-family: Arial, sans-serif !important;
 }
 
+h2 {
+    text-align: center;
+}
+
 .notes-container {
     margin: 30px;
 }
@@ -30,7 +34,7 @@ body {
     margin-left: 50px;
 }
 
-.notes-card-craeted, .notes-card-category, .notes-card-content {
+.notes-card-created, .notes-card-category, .notes-card-content {
     width: 200px;
 }
 
@@ -64,7 +68,7 @@ body {
     align-items: center;
 }
 
-.card-icon {
+.card-icon, .notes-statistic-icon {
     width: 50px;
     color: white;
     background: #616161;
@@ -76,29 +80,27 @@ body {
     margin-right: 10px;
 }
 
+.card-name, .card-dates, .card-created, .card-category, .card-content, .statistic-card-name, .statistic-card-created, .statistic-card-content, .statistic-card-dates {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .card-name {
     display: flex;
     width: 275px;
     color: #888a8e;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     height: 100%;
 }
 
-.card-craeted, .card-category, .card-content {
+.card-created, .card-category, .card-content {
     width: 200px;
     color: #9899a0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .card-dates {
     width: 275px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    color: #9899a0;
 }
 
 .card-notes-image {
@@ -139,6 +141,75 @@ body {
     width: 25%;
 }
 
-.archived{
+.archived {
     width: 35%;
+}
+
+.notes-statistic-card {
+    background-color: #e8eaf5;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 0px 20px;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.notes-statistic-icon {
+    width: 50px;
+}
+
+.notes-statistic-name {
+    width: 50%;
+}
+
+.notes-statistic-active {
+    width: 25%;
+}
+
+.notes-statistic-archived {
+    width: 35%;
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+.create-new-note div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.new-note-name, .new-note-category, .new-note-info {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.new-note-date-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.new-note-date-container div {
+    margin-top: 20px;
+}
+
+.modal-content-add-note {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+.empty-container {
+    background-color: #7a7a7a;
+    color: white;
+    font-size: 30px;
+    text-align: center;
 }
